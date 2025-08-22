@@ -1,2 +1,4 @@
-var num = 45 ;
-console.log(num)
+const { add ,subtract} = require('./maths')
+
+console.log(add (5, 3));
+console.log(subtract (5, 3));
