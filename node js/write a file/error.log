@@ -1,0 +1,17 @@
+2025-08-29T17:03:40.990Z 
+  Error: ENOENT: no such file or directory, open 'C:\input.txt'
+    at async open (node:internal/fs/promises:639:25)
+    at async Object.readFile (node:internal/fs/promises:1246:14)
+    at async file:///C:/Users/DELL/Desktop/My%20Code/backend%20with%20nodejs/node%20js/write%20a%20file/app.js:4:19 
+
+2025-08-29T17:05:17.739Z 
+  Error: ENOENT: no such file or directory, open 'C:\input.txt'
+    at async open (node:internal/fs/promises:639:25)
+    at async Object.readFile (node:internal/fs/promises:1246:14)
+    at async file:///C:/Users/DELL/Desktop/My%20Code/backend%20with%20nodejs/node%20js/write%20a%20file/app.js:4:19 
+
+29/8/2025 
+  Error: ENOENT: no such file or directory, open 'C:\input.txt'
+    at async open (node:internal/fs/promises:639:25)
+    at async Object.readFile (node:internal/fs/promises:1246:14)
+    at async file:///C:/Users/DELL/Desktop/My%20Code/backend%20with%20nodejs/node%20js/write%20a%20file/app.js:4:19

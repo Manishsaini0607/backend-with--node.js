@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+
+import fs from 'node:fs/promises'
+
+const filePath = process.argv[2]
+const oneWord = process.argv[3]
+
+const text = await fs.readFile(filePath, 'utf-8')
+
+// extract words only (no special chars)
+const wordsArray = text.match(/[a-zA-Z0-9]+/g) || []
+
+const wordCount = {}
+wordsArray.forEach(word => {
+  const lower = word.toLowerCase()
+  if (lower in wordCount) {
+    wordCount[lower] += 1
+  } else {
+    wordCount[lower] = 1
+  }
+})
+
+if (oneWord) {
+  console.log(`${oneWord}-${wordCount[oneWord.toLowerCase()] || 0}`)
+} else {
+  console.log(wordCount)
+}
