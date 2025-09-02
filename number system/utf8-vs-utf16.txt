@@ -1,0 +1,41 @@
+🧩 UTF-8 vs UTF-16
+📌 Full Form:
+UTF stands for Unicode Transformation Format
+
+🔁 UTF-8:
+Uses 1 to 4 bytes (variable-length encoding)
+
+Characters in the ASCII range (0–127) use only 1 byte
+
+Higher Unicode characters use 2, 3, or 4 bytes
+
+Uses headers (prefix bits) to determine byte length:
+
+1 byte: 0xxxxxxx
+
+2 bytes: 110xxxxx 10xxxxxx
+
+3 bytes: 1110xxxx 10xxxxxx 10xxxxxx
+
+4 bytes: 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+
+More memory efficient for English-heavy text (where characters fit in 1 byte)
+
+Slightly slower for computation (due to decoding variable byte length)
+
+🔁 UTF-16:
+Uses 2 or 4 bytes
+
+Default size = 2 bytes (16 bits) for most characters
+
+For characters beyond U+FFFF, uses surrogate pairs (4 bytes)
+
+Has two variants:
+
+LE (Little Endian) – Least significant byte first
+
+BE (Big Endian) – Most significant byte first
+
+Does not use header bits, so decoding is faster and more consistent
+
+May consume more memory than UTF-8 for ASCII-heavy content
