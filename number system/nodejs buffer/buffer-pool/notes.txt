@@ -1,0 +1,58 @@
+🧵 Buffer Pool in Node.js 🔁
+When we create buffers using Buffer.allocUnsafe(), Node.js uses a shared memory pool (an ArrayBuffer) to speed things up 🚀.
+
+⚙️ How It Works:
+Node.js maintains a buffer pool of size 8 KiB = 8192 bytes.
+Buffer.poolSize; // 8192
+This pool is a single large ArrayBuffer shared across small Buffer instances.
+
+✅ Condition for Using Buffer Pool:
+To be eligible to use the shared buffer pool:
+BufferSize < Buffer.poolSize >>> 1
+i.e.
+🔸 Buffer size < 4096 bytes (half of pool)
+If:
+✔️ Size is small AND
+✔️ Enough space is available in the pool
+→ ✅ The buffer will be allocated from the pool (faster, shared)
+If:
+❌ Size ≥ 4096
+OR
+❌ Not enough room left in pool
+→ 🆕 A new ArrayBuffer is allocated exclusively for that buffer.
+
+🎯 Practical Demo:
+import { Buffer, constants } from "buffer";
+const a = Buffer.alloc(4);           // Normal buffer
+const b = Buffer.allocUnsafe(4);     // Fast! May use pool
+const c = Buffer.allocUnsafeSlow(4); // Doesn’t use pool at all
+
+console.log(Buffer.poolSize); // 8192
+
+console.log(constants.MAX_LENGTH); // Max buffer size (~2GB)
+// Check underlying ArrayBuffer sizes:
+console.log(a.buffer.byteLength); // 4 (same as byteLength)
+
+console.log(b.buffer.byteLength); // 8192 (from pool!)
+
+⚡ Why allocUnsafe() is Fast?
+It doesn’t zero-fill memory, so saves time.
+If pool is used, memory is already pre-allocated — just slice and return.
+Shared memory usage avoids frequent allocation/deallocation.
+
+❗ Buffer.allocUnsafeSlow()
+Creates a new buffer without using the pool.
+Slower and more memory-consuming.
+const slowBuffer = Buffer.allocUnsafeSlow(4);
+console.log(slowBuffer.buffer.byteLength); // 4
+
+🧠 Bonus:
+Buffer.from(), Buffer.concat() also use allocUnsafe() internally to boost performance.
+You can modify pool size by:
+Buffer.poolSize = 16384; // New size for future pools
+But the first pool will still be 8192 — only future ones will use new size.
+
+📦 Constants from Buffer:
+import { Buffer, constants } from "buffer";
+constants.MAX_LENGTH         // ~2 GB (Max Buffer size)
+constants.MAX_STRING_LENGTH  // ~1 GB (Max String allowed)
