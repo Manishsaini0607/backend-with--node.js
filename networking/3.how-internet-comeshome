@@ -1,0 +1,48 @@
+How Internet Comes to Our Home?
+Internet ghar tak kaise aata hai? Chalo step-by-step dekhte hain:
+1️⃣ Content Origin – Data Centers
+📍 Internet ki journey start hoti hai yaha se
+Websites, videos, apps — sab data centers me hosted hote hain
+Ye data centers hoti hain huge server farms, jahan pe digital content store aur manage kiya jaata hai
+🖥️ Example: YouTube ke videos Google ke data centers me hote hain
+2️⃣ Long Distance Transmission – Submarine Cables & Satellites
+🌍 Kaise data continents cross karta hai?
+✅ Main method:
+Submarine Fiber Optic Cables
+Ye cables oceans ke niche bichhi hoti hain
+99% international internet traffic inhi cables se hoti hai
+📡 Alternate/Backup:
+Satellites (especially remote areas ke liye ya emergency backup)
+3️⃣ Internet Backbone – Tier 1 ISPs
+🔗 Global Internet Highway
+Submarine cables directly connect hoti hain Tier 1 ISPs se
+Examples: Tata Communications, AT&T, NTT
+Ye ISPs pura worldwide internet backbone operate karte hain
+Inke paas huge capacity hoti hai data handle karne ki
+4️⃣ Regional Distribution – Tier 2 & Tier 3 ISPs
+🏙️ National/Local level distribution
+Tier 2/3 ISPs directly Tier 1 providers se data lete hain
+Ye companies Internet ko cities, towns, villages tak pahuchati hain
+Example: Airtel, Jio, ACT, BSNL, etc.
+5️⃣ Local Distribution – “Last Mile”
+🚪 Neighborhood tak internet ka aana
+Ab Tier 2/3 ISPs apna local infrastructure use karte hain:
+Fiber optic cables
+Coaxial (cable TV wires)
+DSL (telephone lines)
+Ye line tumhare building ya ghar tak aati hai
+Isko “Last Mile” connection bola jaata hai
+6️⃣ Home Connection – Modem & Router
+🏠 Ghar ke andar internet ka setup
+Jo wire ghar tak aayi hai, wo connect hoti hai Modem se
+Modem signal ko digital data me convert karta hai
+Modem ke baad aata hai Router
+Router tumhare ghar me Wi-Fi create karta hai
+Ye sab devices ko connect karta hai
+7️⃣ Device Access – Internet on Your Devices
+📱💻📺 Finally tumhare devices online!
+Devices (mobile, laptop, TV) Wi-Fi router se connect hote hain
+Router tumhare device ko IP address assign karta hai
+Jab bhi tum koi website open karte ho ya app use karte ho:
+Request jaati hai router → ISP → Tier 1 → Data Center
+Waha se data return hota hai same path follow karke

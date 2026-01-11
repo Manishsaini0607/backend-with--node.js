@@ -1,0 +1,53 @@
+1. LAN (Local Area Network)
+
+Scope: Small area like a home, school, or office.
+
+Range: A few meters to a few kilometers.
+
+Examples: Home Wi-Fi, office computer network.
+
+Use: Fast, secure, low-cost internal communication.
+
+2. MAN (Metropolitan Area Network)
+
+Scope: City-level, connects multiple LANs within a city.
+
+Range: Up to ~50 km.
+
+Examples: City-wide broadband, cable TV networks.
+
+Use: Communication between schools, offices, or institutions in one city.
+
+3. WAN (Wide Area Network)
+
+Scope: Covers large geographical areas, even countries or continents.
+
+Range: Thousands of kilometers.
+
+Examples: The Internet, nationwide bank ATM networks.
+
+Use: Global communication, connecting large businesses.
+
+4. PAN (Personal Area Network)
+
+Scope: Very short range, around one person.
+
+Range: ~10 meters.
+
+Examples: Bluetooth, mobile tethering, smartwatch syncing.
+
+5. BAN (Body Area Network)
+
+Scope: Around the human body, mainly for healthcare devices.
+
+Range: A few centimeters to meters.
+
+Examples: Heart rate monitors, fitness trackers.
+
+6. CAN (Campus Area Network)
+
+Scope: Multiple LANs across a campus (college, university, or company).
+
+Range: Larger than LAN, smaller than MAN (few kilometers).
+
+Examples: University campus network, corporate campus network.

@@ -1,0 +1,45 @@
+📡 IPv4 Address & Subnet Mask – Easy Explanation
+🔹 What is an IP Address?
+IP = Internet Protocol.
+Ye ek unique identifier hota hai jo har device ko assign hota hai jab vo kisi network (Internet ya Local Network) se connect hota hai.
+Local networks me IP router assign karta hai, jabki mobile/broadband me IP ISP (Internet Service Provider) assign karta hai.
+Important: IP protocol ≠ IP address.
+Protocol = rules ka set
+Address = sirf uska ek part
+
+🔹 IPv4 Address Format
+IPv4 ek 32-bit binary number hota hai, jo 4 octets (8 bits each) me divide hota hai.
+Example (Binary):
+11000000 10101000 00000000 00000001
+Decimal me: 192.168.0.1
+Human readability ke liye decimal me likha jata hai.
+
+🔹 IPv4 Range
+Minimum: 0.0.0.0
+Maximum: 255.255.255.255
+Total unique addresses: 256⁴ = 4,294,967,296
+
+🔹 Reserved Address Range (IPv4 ki Limitations)
+127.0.0.0 – 127.255.255.255 → Reserved for Loopback Testing (internal device testing).
+Example:
+127.0.0.1 → Loopback address (localhost)
+Subnet mask: 255.0.0.0
+
+🔹 What is a Subnet Mask?
+Subnet mask ek 32-bit number hota hai jo IP ko Network Portion & Host Portion me divide karta hai.
+Example:
+IP: 192.168.1.10
+Subnet Mask: 255.255.255.0
+Binary: 11111111.11111111.11111111.00000000
+First 24 bits → Network, last 8 bits → Host
+
+🔹 CIDR Notation
+CIDR = Classless Inter-Domain Routing
+Short form me subnet mask likhne ka tareeka.
+Example:
+192.168.1.10/24
+/24 → first 24 bits network ke liye, baaki 8 bits host ke liye.
+Equivalent mask: 255.255.255.0
+
+💡 Quick Analogy:
+IP address ko ghar ka address samjho, aur subnet mask ko colony ka map jo batata hai kaunsa area kis colony ka hissa hai.
