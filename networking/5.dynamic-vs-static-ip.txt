@@ -1,0 +1,20 @@
+Dynamic vs Static IP Address
+🌐 Dynamic IP Address
+Definition: Ek aisa IP address jo time ke sath change hota rehta hai.
+Assigned By: Automatically milta hai DHCP (jaise router ya ISP) se.
+Stability: Har reboot ya kuch samay baad change ho sakta hai.
+Cost: Usually free hota hai internet plan ke sath.
+Use Cases: Home networks, personal devices, general internet use.
+Security: Thoda zyada secure hota hai normal users ke liye (trace karna mushkil).
+Configuration: User ko manually kuch set karne ki zarurat nahi.
+🖥 Static IP Address
+Definition: Ek fixed IP address jo same rehta hai jab tak manually change na kiya jaye.
+Assigned By: Manually configure hota hai ya ISP assign karta hai.
+Stability: Hamesha same rehta hai.
+Cost: Mostly extra cost lagti hai.
+Use Cases: Servers, website hosting, remote access, VPN setup.
+Security: Thoda vulnerable ho sakta hai agar properly secure na ho.
+Configuration: Manual setup required hota hai.
+💡 Quick Tip:
+Agar tumhe ek hi device ko baar-baar remotely access karna hai, to Static IP better hai.
+Normal browsing, streaming, gaming ke liye Dynamic IP perfect hai.
