@@ -1,0 +1,44 @@
+📓 How DNS Server Works
+🔍 DNS Lookup Flow
+DNS ka kaam simple hai — domain name → IP address ka translation. Is process ko DNS Resolution bolte hain.
+Test karne ke liye command:
+nslookup <domainName>
+📶 IPv6 Preference
+Agar IPv4 & IPv6 dono available hain, system IPv6 prefer karega (kyunki addresses zyada available hain aur performance better ho sakti hai).
+🔐 Direct IP Access Control
+Agar tum direct IP se site open karte ho (e.g., http://142.250.182.14), to ye depend karta hai website owner ne allow kiya hai ya block.
+🌐 Common Public DNS Servers
+1.1.1.1 → Cloudflare DNS
+8.8.8.8 → Google DNS
+🛠 DNS Resolution Steps
+1️⃣ Check Browser Cache
+Browser pehle apne cache me dekhta hai ki kya is domain ka IP already stored hai.
+2️⃣ Check OS Cache
+Agar browser me nahi mila to OS ke DNS cache ko check karta hai.
+3️⃣ Ask DNS Resolver
+OS ek Recursive DNS Resolver (e.g., 1.1.1.1, 8.8.8.8) ko query karta hai.
+Ye resolver pehle apna cache check karta hai.
+4️⃣ Query Root Server (.)
+Agar cache miss ho, resolver Root DNS Server se poochta hai.
+Root server TLD server ka address deta hai (e.g., .com).
+5️⃣ Query Top-Level Domain (TLD) Server
+Resolver TLD server se poochta hai ki requested domain ka Authoritative Name Server kaunsa hai.
+6️⃣ Query Authoritative Name Server
+Ye server domain ka actual IP address rakhta hai.
+Ye resolver ko correct IP return karta hai.
+7️⃣ Browser Connects to Web Server
+Browser IP se connect karke website load karta hai.
+📡 What is a Name Server?
+Ek specialized server jo domain name ka location batata hai.
+DNS records store karta hai:
+A record → IPv4 address
+AAAA record → IPv6 address
+MX record → Mail server info
+Authoritative Name Server → Domain ka final truth source.
+⏳ What is TTL (Time To Live)?
+TTL ek value (seconds me) hai jo batati hai ki DNS record kitni der cache me rakha ja sakta hai.
+Example: TTL = 300 → record 5 minutes ke liye cache me rahega.
+Short TTL → Updates jaldi reflect honge but DNS queries zyada hongi.
+Long TTL → Performance better but changes reflect hone me delay.
+⚡ Summary:
+DNS resolution ek step-by-step query process hai jo cache se start hota hai, phir Root → TLD → Authoritative Name Server se IP find karta hai. Name servers DNS ka backbone hain aur TTL caching ka control karta hai.

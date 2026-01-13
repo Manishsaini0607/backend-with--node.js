@@ -1,0 +1,33 @@
+📓 Understanding Domain Name System (DNS)
+🌐 DNS kya hai?
+DNS (Domain Name System) ek translation service hai jo human-readable domain names (jaise www.google.com) ko IP addresses me convert karta hai.
+Computers ek dusre ko IP address se pehchante hain, par humans ke liye names yaad rakhna easy hota hai.
+🏛 Domain Hierarchy
+1️⃣ Root Level Domain (RLD)
+Represented by a dot (.)
+DNS ka sabse upar ka level.
+Managed by ICANN (Internet Corporation for Assigned Names and Numbers).
+Isme saare Top-Level Domains (TLDs) hote hain.
+Example: www.google.com. (last dot optional hai — browsers bina bhi samajh lete hain).
+2️⃣ Top-Level Domain (TLD)
+Examples: .com, .org, .net, .gov, .in
+Har TLD kisi specific organization ke under hota hai jo isko manage karti hai.
+Ye organizations apne TLD ke andar Second-Level Domains create karne ka right deti hain.
+3️⃣ Second-Level Domain (SLD)
+Example: google in google.com
+Ye TLD ke andar register hota hai.
+Ownership TLD registrars ke through milta hai.
+4️⃣ Subdomain
+Example: www in www.google.com
+Ye Second-Level Domain ke andar create hota hai.
+Multiple levels deep ho sakta hai:
+Example: mail.support.google.com
+📏 Important Rules
+Total length of a domain name (including dots) ≤ 255 characters.
+Har label (dot ke beech ka part) ≤ 63 characters.
+🛒 Domain Registration
+TLDs ka ownership authorized organizations ke paas hota hai, par wo direct public ko sell nahi karte.
+Domain Registrars (jaise GoDaddy, Namecheap, Hostinger) domains bechne aur manage karne ka kaam karte hain.
+Public in registrars ke through apna Second-Level Domain register kar sakti hai.
+⚡ Summary:
+DNS ek phonebook jaisa hai internet ka — naam se address find karta hai. Domain hierarchy Root → TLD → SLD → Subdomain hoti hai, aur rules ke according length restrictions hote hain.
