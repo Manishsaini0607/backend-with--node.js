@@ -1,0 +1,20 @@
+--------------------- I N   S H O R T ---------------------------------------
+1) Port number identifies specific services inside a device.
+
+2) IP identifies the device, port identifies the application.
+
+3)Total ports = 65,536 (0–65535).
+
+4)Port categories:
+          Well-known (0–1023)
+          Registered (1024–49151)
+          Dynamic/Private (49152–65535)
+
+5)Common ports: 80 (HTTP), 443 (HTTPS), 22 (SSH), 53 (DNS), 3306 (MySQL), 27017 (MongoDB).
+6)Port + IP = Socket (e.g., 192.168.1.10:3000).
+
+7)Ports can be open, closed, or filtered by firewall/ISP.
+
+8)If a port is blocked or not listening, no device on the network can access it.
+
+9)Multiple services cannot use the same port on the same IP at the same time.
