@@ -1,0 +1,20 @@
+✅What is Firewall?
+Notes:- 
+
+Domain network (Network which is provided by company WIFI usually Big Teach Company)
+Private Network (Network which we know and usually it is home Network (Personal Wifi) and firewall have less strict rules)
+Public Network (Network which are provided by public WIFI like Hotels, Railway Station and other firewall have strict rules on it)
+
+Firewall is a software that is between system and the software. In Every operating system it is come inbuild by default like Linux, MacOS, Windows and other Linux (distribution). In windows it is under windows defender that is a antivirus
+
+Firewall have Two Things
+Inbound (The request which are coming to the System)
+Outbound (The Request which are going to the Server)
+
+Local System our own system
+Remote System the system in which we send request
+
+We also add rules in Inbound, Outbound. Which helps to block request and give access to request
+By IP Address we can Block and also provide range of IP Address
+
+Big Company like Youtube have different IP it not have Single IP for website to access

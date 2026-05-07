@@ -1,0 +1,5 @@
+What is MAC Address?
+Notes:- 
+MAC is Hexadecimal 48 bytes  stand Media Access Control that is a physical Address comes inbuild when device create it is different for WIFI, Internet and Bluetooth and other NIC stand for Network Interface Card
+Router use mac Address to create table to assign IP to know  which device is
+Mac Address will never change
