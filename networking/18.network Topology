@@ -1,0 +1,33 @@
+🌐 Networking Topology
+Definition:
+Network topology ka matlab hota hai arrangement/structure of devices (nodes) aur unka connection style ek network ke andar. Ye decide karta hai ki data ek device se dusre tak kaise travel karega.
+🛠 Types of Network Topologies
+🔗 1. Point-to-Point
+Sirf 2 devices ke beech direct link hota hai.
+Fast & simple communication.
+Example: PC ↔ Printer
+📏 2. Bus Topology
+Saare devices ek single central cable (bus) se connected hote hain.
+Cheap but agar cable damage ho jaye → pura network down.
+Example: Purane Ethernet networks
+🔄 3. Ring Topology
+Har device apne 2 neighbors se connected hota hai → ek circular path banta hai.
+Data ek hi direction me ghoomta hai (uni-directional / bi-directional).
+Agar ek link toot jaye, pura ring disturb ho sakta hai.
+⭐ 4. Star Topology
+Saare devices ek central hub/switch se connect hote hain.
+Agar ek node fail ho → baaki kaam karte rahte hain.
+Agar hub fail ho gaya → pura network down.
+Example: Modern LANs
+🕸 5. Mesh Topology
+Har device har dusre device se connected hota hai.
+Super reliable (multiple paths available).
+Lekin cost bahut zyada.
+Example: Military communication networks
+🌲 6. Tree Topology
+Ek hierarchical structure jisme multiple Star networks ek backbone se connected hote hain.
+Flexible aur scalable.
+Example: Large organization networks
+🔀 7. Hybrid Topology
+Do ya zyada topologies ka combination.
+Example: Star + Mesh, Star + Ring

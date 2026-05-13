@@ -1,0 +1,69 @@
+🛰️ OSI Model (Open Systems Interconnection Model)
+Definition:
+OSI ek conceptual framework hai jo explain karta hai ki data kaise ek device se dusre device tak travel karta hai, 7 layers ke through.
+
+🏛 Layers of OSI Model (Top → Bottom)
+7. Application Layer
+End-user ke closest layer.
+Human-readable data handle karta hai (jaise form input, POST request).
+Example: Browser → Node.js server (username & password bhejna).
+Protocols: HTTP, HTTPS, FTP, SMTP.
+
+6. Presentation Layer
+Data ko transform karta hai → readable & secure form mein.
+Tasks:
+Serialization (e.g., JSON.stringify).
+Compression (data chhota karna).
+Encryption/Decryption (security ke liye).
+Example: HTTPS encryption, data compression.
+
+5. Session Layer
+Do devices ke beech connection/session manage karta hai.
+Session create/maintain/destroy karna.
+Example: TCP connections, remote login sessions.
+Data pe yaha koi change nahi hota.
+
+4. Transport Layer
+Data ko chhote segments mein todta hai.
+Port numbers assign karta hai (Source & Destination dono ke).
+Reliable delivery ensure karta hai (TCP) ya fast delivery (UDP).
+Example:
+Segment: Source Port 54321 → Destination Port 4000
+Service to Service delivery.
+
+3. Network Layer
+Segment + IP addresses add → Packet banata hai.
+Source & Destination IP assign hota hai.
+Example:
+TCP:54321
+Source IP: 192.168.0.5
+Destination IP: 142.3.4.1
+End to End delivery.
+
+2. Data Link Layer
+Packet + MAC addresses add → Frame banata hai.
+Source & Destination MAC assign hota hai.
+(Router ke MAC use hote hain, end device ke nahi).
+Example:
+Source MAC: 24-9A-43-2B
+Dest. MAC: 1A-42-F9-4B
+Hop to Hop delivery.
+
+1. Physical Layer
+Frames ko physical signals mein convert karta hai (electrical, optical, radio waves).
+Data cables, WiFi signals, fiber optics.
+Yehi se data device se physically nikalta hai.
+
+📦 Encapsulation & Decapsulation
+Encapsulation: Jab data Application layer → Physical layer tak jata hai, har layer apni info add karti hai.
+Decapsulation: Jab data destination device par aata hai, har layer apni info remove karke asli data Application tak pahuchati hai.
+
+🔑 Delivery Types
+Hop to Hop delivery → Data Link Layer (Layer 2).
+End to End delivery → Network Layer (Layer 3).
+Service to Service delivery → Transport Layer (Layer 4).
+
+📌 Important Notes
+Node.js app → Application layer mein hoti hai, lekin indirectly Presentation, Session & Transport layer concepts ko bhi use karti hai.
+OSI model = theoretical model.
+Practically hum mostly TCP/IP model use karte hain.

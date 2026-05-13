@@ -1,0 +1,43 @@
+🚀 TCP aur UDP: Internet ke Backbone
+Duniya ka internet mainly do protocols pe depend karta hai: TCP aur UDP. Baaki saare major protocols (HTTP, FTP, SMTP, WebRTC etc.) in dono ke upar bante hain.
+
+🌐 TCP aur UDP kya hain?
+Dono Layer 4 (Transport Layer) protocols hain OSI model me.
+TCP (Transmission Control Protocol) → Reliable communication deta hai.
+UDP (User Datagram Protocol) → Fast aur lightweight hai, lekin reliable nahi.
+Internet me mostly TCP use hota hai, lekin real-time apps me UDP ki importance bahut hai.
+
+🔒 TCP kaise kaam karta hai?
+TCP ek connection-oriented protocol hai → Pehle connection establish, phir data transfer.
+3-Way Handshake (Connection Setup):
+SYN → Computer A ne connection start kiya.
+SYN-ACK → Computer B ne response diya.
+ACK → Computer A ne confirm kiya.
+Phir session start hota hai aur data segments me bheja jata hai.
+TCP ensure karta hai ki data lossless aur correct order me mile. Agar packet miss ho gaya toh retransmission hoti hai.
+
+⚡ UDP kaise kaam karta hai?
+UDP ek connectionless aur unreliable protocol hai.
+Sirf datagrams bhejte hain bina confirm kiye ki voh pahunch gaye ya nahi.
+Speed important hai, accuracy secondary.
+Agar packet lost ho jaye → Application handle kare (jaise video call me “repeat that again”).
+Use cases: Live streaming, video calls, online gaming.
+
+🌍 Real-World Examples
+TCP → Web browsing (HTTP/HTTPS), File transfer (FTP), Email (SMTP).
+UDP → Video calls (WebRTC), Online games, Live streaming.
+
+🔥 Latest Protocols
+QUIC (Quick UDP Internet Connection) → Google ne banaya, UDP par based.
+HTTP/3 → QUIC ke upar run karta hai (iska matlab HTTP/3 = UDP based).
+
+🎯 Ports in TCP/UDP
+Dono ke paas 65,536 ports (0–65535) hote hain.
+Same port number par TCP aur UDP alag-alag apps run kar sakte hain.
+Lekin ek hi port par do TCP apps ek sath run nahi kar sakte.
+
+📝 Summary
+TCP → Reliable, connection-oriented, ordered data.
+UDP → Fast, connectionless, thoda unreliable.
+TCP = Safety, UDP = Speed.
+Networking me samajhna zaroori hai ki kab TCP use karna hai aur kab UDP.

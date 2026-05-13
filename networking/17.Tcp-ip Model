@@ -1,0 +1,49 @@
+🌐 TCP/IP Model (Transmission Control Protocol / Internet Protocol)
+🔎 Definition:
+Ye woh practical model hai jo real-world internet pe use hota hai. Jitna OSI theoretical hai, utna hi TCP/IP practical hai.
+OSI ki 7 layers ko simplify karke sirf 4 layers banayi gayi hain.
+📶 Layers of TCP/IP Model (Top → Bottom)
+1️⃣ Application Layer
+OSI ki Application + Presentation + Session ko mila kar ek hi banayi gayi hai.
+Ye end-user ke sabse closest hai.
+Kaam: Data generate karna aur send karna.
+Protocols: HTTP, HTTPS, FTP, SMTP, DNS.
+Example: Browser → Server ko request bhejna (GET/POST).
+2️⃣ Transport Layer
+Service-to-service delivery karta hai.
+TCP (Segment): Reliable delivery (acknowledgment, retransmission).
+UDP (Datagram): Fast, lightweight (video streaming, gaming).
+Port Numbers: Yaha assign hote hain.
+Example:
+Source Port: 54321 → Destination Port: 443
+3️⃣ Internet Layer
+OSI ka Network Layer yahaan Internet Layer ban gaya.
+End-to-End delivery karta hai IP addresses ke basis pe.
+Unit: Packet.
+Protocols: IP (IPv4/IPv6), ICMP, ARP.
+Example:
+Source IP: 192.168.1.5 → Destination IP: 142.250.74.14 (Google)
+4️⃣ Network Access Layer (a.k.a. Link Layer)
+OSI ke Data Link + Physical layers ko mila diya gaya.
+Unit: Frame/Bits.
+MAC Addresses: Local delivery ke liye use hote hain.
+Ye actual hardware pe dependent hai (Ethernet cable, WiFi, Fiber).
+Example:
+Source MAC: 24-9A-43-2B → Dest MAC: 1A-42-F9-4B
+🛰️ Journey of Data (TCP/IP Model + Devices):
+Application Layer: Browser request banata hai → HTTP request.
+Transport Layer: TCP segment banata hai → Port numbers attach.
+Internet Layer: IP address attach hota hai → Packet banta hai.
+Network Access Layer: MAC + physical signal → Frame banta hai.
+👉 Ab data nikalta hai device se aur:
+Switch: MAC address use karke frame ko next hop bhejta hai.
+Router: IP address check karke decide karta hai ki packet kahan forward hoga.
+Firewall: Ports/IPs verify karta hai (allow ya block).
+Destination Server: Layers ko reverse order mein open karta hai (Decapsulation) aur request samajhta hai.
+📌 Key Differences vs OSI
+OSI = 7 layers (theory), TCP/IP = 4 layers (practical).
+TCP/IP Internet ka real foundation hai.
+OSI ke Presentation & Session layer ke concepts TCP/IP ke Application mein absorb ho gaye hain.
+Chhota sa mnemonic:
+TCP/IP = [A] Application → [T] Transport → [I] Internet → [N] Network Access
+(Yaad karna easy hai: Aaj Tera Internet Nikal gaya 😂)
