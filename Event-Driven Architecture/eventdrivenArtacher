@@ -1,0 +1,13 @@
+19/2/2026 ✅Introduction to Event-Driven Architecture
+Notes:- It contain 3 components
+1. Event emitter (when event will execute)
+2. event lister (listen for the event for execute)
+3. event handler (what will done after event execute)
+
+EDA Pattern (Event-driven architecture)
+NodeJS
+Browser DOM Events
+Chat Apps
+OS Handling UserInputs
+Youtube Notifications
+Payment Processing System

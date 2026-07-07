@@ -1,0 +1,42 @@
+1. CPU Operations
+   CPU operations are tasks that require processing power from the CPU.
+
+These operations mainly involve:
+
+- calculations
+- logic
+- computations
+
+Examples
+
+- mathematical calculations
+- loops
+- sorting
+- encryption
+- image processing
+- data compression
+
+Characteristics of CPU Operations
+
+✅ Processor intensive
+✅ Uses CPU power
+✅ Blocks execution if heavy
+✅ Fast memory access required
+
+2. I/O Operations
+   These operations involve communication with external resources.
+
+Examples
+
+- reading files
+- writing files
+- database queries
+- API requests
+- network communication
+
+Characteristics of I/O Operations
+
+✅ Waiting-based
+✅ Slower than CPU operations
+✅ Depends on external systems
+✅ Usually asynchronous in Node.js
