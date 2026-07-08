@@ -1,0 +1,29 @@
+
+function EventEmitter() {
+    let events = {}
+    let eventCount = {}
+    return {
+        _events: events,
+        _eventCount: eventCount,
+        on: function (type, callback) {
+            if (!events[type]) {
+                events[type] = [callback]
+            } else { events[type].push(callback) }
+            eventCount.count = Object.keys(events).length
+        },
+        emit: function (type) {
+            if (events[type].length) {
+                events[type].forEach(event => {
+                    event()
+                });
+            } else {
+                events[type]()
+            }
+        }
+    }
+}
+
+const emitter = EventEmitter()
+emitter.on('listen', function () {
+    console.log('on listening 1');
+})
