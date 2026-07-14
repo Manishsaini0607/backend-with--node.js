@@ -1,0 +1,7 @@
+22/2/2026 ✅More about Readable Streams
+Notes:- 
+Some of the methods and property of readable streams we get
+like destroy() used to top the read of the stream and we even pass even through it 
+All the event emitter we get on, end, open, pause, resume, readable and etc
+when there is error first error emitter will fire than the close emitter will fire
+we receive the error in callback that we pass in the destroy

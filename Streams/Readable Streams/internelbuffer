@@ -1,0 +1,23 @@
+ Internal Buffer of Readable Stream
+In Node.js, when data flows through a readable stream, it is temporarily stored in memory before being consumed. This temporary storage is known as the internal buffer.
+
+📦 What Is It?
+The internal buffer contains the chunks of data that the stream has received but not yet consumed.
+It changes dynamically as new chunks arrive or are read.
+Its size is controlled by the highWaterMark option passed while creating the stream.
+
+🛠️ Example: Reading Internal Buffer
+stream.on("readable", () => {    console.log(stream.readableLength);  // Shows bytes available in buffer    
+console.log(stream.read());          // Reads chunk from buffer    
+console.log(stream.readableLength);  // Shows remaining bytes
+});
+
+📝 Breakdown:
+readableLength: Number of bytes currently in the internal buffer.
+read(): Consumes data from the buffer.
+After each read(), the internal buffer size decreases.
+
+💡 Key Points:
+The 'readable' event is emitted when a chunk is available to read.
+The buffer doesn't grow infinitely—it is capped by highWaterMark.
+This method gives manual control over reading, unlike 'data' event which auto-consumes.
