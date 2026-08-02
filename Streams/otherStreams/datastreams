@@ -1,0 +1,23 @@
+24/2/2026 ✅Data Streams
+Notes:-
+It is usually Linux Operating Concept 
+Any Process have 3 stream, But they all are duplex stream at the end
+
+stdin it is a readable Stream it connect keyboard to our process. The typing part
+stdout it is a writable Stream connect process to monitor. The display part
+stderr it is also writable Stream connect process to monitor. The error part
+
+console uses process.stdout behind the scenes (NodeJS official Docs Says)
+
+Help of this we can connect any two process and do data sharing and build connection
+
+Example:-
+using child_Process net module in NodeJS we can run process in other process and import the process stdout and bring to our main NodeJs application and play with it
+
+Code Examples (./examples/ folder):-
+  1_stdin_stdout_stderr.js    → stdin, stdout, stderr demo (interactive)
+  2_piping_stdin_to_stdout.js → piping stdin → stdout (interactive)
+  3_child_process_streams.js  → child_process: spawn, read stdout, write stdin, pipe 2 processes
+  4_console_vs_stdout.js      → proves console.log uses process.stdout internally
+  5_process_to_process.js     → full inter-process communication (send data ↔ receive results)
+
