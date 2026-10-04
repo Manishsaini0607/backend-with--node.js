@@ -20,6 +20,11 @@ app.disable('x-powered-by'); // Disable the 'X-Powered-By' header for security r
 
 
 // global middleware
+app.use((req, res, next) => {
+  console.log('Global middleware executed');
+   res.send('Global middleware executed');
+  next();
+});
 
 
 
