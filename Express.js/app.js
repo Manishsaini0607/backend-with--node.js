@@ -27,17 +27,42 @@ app.disable('x-powered-by'); // Disable the 'X-Powered-By' header for security r
 //   next();
 // });
 
-app.use(express.json()); // Middleware to parse JSON request bodies
+// app.use(express.json()); // Middleware to parse JSON request bodies
 
-app.get('/login', (req, res) => {
-  res.send('user login!');
+// // app.get('/login', (req, res) => {
+// //   res.send('user login!');
+// // });
+
+
+////////////////------   Route-Specific Middleware
+// app.use('/register', (req, res, next) => {
+//   console.log('Middleware for /register route executed');
+//      if (req.body.password ===  'secret') {
+//    next();
+//   } else {
+//     res.send('Password is incorrect');
+//   }
+  
+// } )
+
+// app.post('/register', (req, res) => {
+//   console.log(req.body);
+//   res.send('user register!');
+// });
+
+
+
+
+// app.use(express.static('public')); // Serve static files from the 'public' 
+
+// app.get('/', (req, res) => {
+//   res.sendFile(`${import.meta.dirname}/test.webm`);
+// });
+
+
+app.get('/', (req, res) => {
+  res.status(201).json({ message: 'Hello, World!' });
 });
-
-app.post('/register', (req, res) => {
-  console.log(req.body);
-  res.send('user register!');
-});
-
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
