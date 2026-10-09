@@ -6,7 +6,7 @@ A network is a group of interconnected devices (like computers, smartphones, ser
 🔗 Key Points:
 Devices in a network are called nodes.
 Networks can be:
-Wired (using physical cables like Ethernet)
+Wired (using physical cables like Ethernet)       
 Wireless (e.g., Wi-Fi, Bluetooth)
 
 🖥️ What is Computer Networking?
